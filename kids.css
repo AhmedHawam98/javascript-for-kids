@@ -1,0 +1,82 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#ges
+{
+    border: 2px solid darkblue;
+    padding: 10px;
+    width:450px;
+    height: 170px;;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 15;
+    margin: -100px 0 0 -230px;
+    background-color: honeydew;
+}
+input[type=button]
+{
+    background-color:#001eff;
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+}
+input[type=button]:hover
+{
+    background-color:rgb(0, 162, 255);
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px rgb(0, 79, 99);
+}
+input[type=text]
+{
+    width: 290px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 162, 255);
+    border-radius: 4px;
+    text-align: center;
+}
+.reload
+{
+    font-size: 30px;
+    float: left;
+    margin-top:-32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+iframe
+{
+    display: none;
+}
+i
+{
+    margin: 5px;
+}
+a:visited
+{
+    color: black;
+}
+a:hover
+{
+    color: white;
+}

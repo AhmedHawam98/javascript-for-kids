@@ -1,9 +1,42 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>JavaScript for Kids</title>
+    <script type src="word-guess.js"></script>
+    <link rel="stylesheet" type="text/css" href="kids.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body
+      {
+        background-image: url(kids.png);
+        background-size: cover;        
+      }  
+      </style>
   </head>
   <body>
-    <script src="word-guess.js"></script>
+    <div id=ges>
+      <p id="ShowedText"></p>
+      <input type="text" id="TextBox"/>
+      <input type="button" id="SubmitButton" value="Submit"/>
+      <p class=reload ; onclick="location.reload()"><i class="fa fa-repeat" style="font-size:24px"></i></p>
+    </div>
+    <audio id="audio_bgm" autoplay="autoplay">
+      <source src="kids.mp3" />
+      </audio>
+      
+      <a href="#" id="togglebgm"><i class="fa fa-play" style="font-size:30px"></i>
+      </a>
+      <script>
+      var audio = document.getElementById('audio_bgm');
+      
+      document.getElementById('togglebgm').addEventListener('click', function (e)
+      {
+      e = e || window.event;
+      audio.muted = !audio.muted;
+      e.preventDefault();
+      }, false);
+      </script>
+  </div>
   </body>
 </html>
