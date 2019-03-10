@@ -76,9 +76,8 @@ function try_this_letter() {
     if (word.indexOf(letter) < 0) {
         // add a strike
         strikes++;
-        //TODO change this alert
-        alert("Bad guess!");
-
+        var wrongL=document.getElementById("wrong");
+        wrongL.innerHTML += letter+" ,&nbsp";
         // If the letter exists in the word, we need to
         // add it to the good guesses array
     } else {
@@ -98,14 +97,15 @@ function try_this_letter() {
 }
 function gameOver() {
     if (strikes === 3) {
-        alert("Sorry, please play again!");
-    } else {
-        alert("Congratulations on your win!");
-        var congr=document.getElementById("cong")
-        congr.innerHTML=("visabilty:visable;")
+        var result=document.getElementById("result");
+        result.innerHTML += "Sorry, please play again! <br>";
+        } else {
+        var result=document.getElementById("result")
+        result.innerHTML += "Congratulations on your win! <br>"
     }
     
-    alert("The secret word was " + word);
+    var secret=document.getElementById("secret");
+    secret.innerHTML += word +" ,&nbsp";
 
     initalizePage();
 }

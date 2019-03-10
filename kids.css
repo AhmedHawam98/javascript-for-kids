@@ -1,7 +1,10 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 #ges
 {
@@ -16,6 +19,34 @@ html,body{
     z-index: 15;
     margin: -100px 0 0 -230px;
     background-color: honeydew;
+}
+#alert
+{
+    border: 2px dashed rgb(0, 0, 0);
+    padding: 10px;
+    width:650px;
+    height: auto;
+    text-align: center;
+    top: 82%;
+    left: 29%;
+    position: absolute;
+    z-index: 15;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+#wrong,#secret
+{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+#result
+{
+    font-size: 30px;
+    margin-top: 45px;
+    color: red;
+    text-shadow: 1px 1px rgb(255, 255, 255);
 }
 input[type=button]
 {
@@ -79,4 +110,8 @@ a:visited
 a:hover
 {
     color: white;
+}
+#togglebgm
+{
+    position: fixed;
 }
